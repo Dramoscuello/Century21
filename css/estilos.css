@@ -1,3 +1,20 @@
 .titulo_hide{
     display: none;
 }
+.navegacion ul li a{
+    text-decoration: none;
+}
+
+.navegacion ul li a:hover{
+    color: rgba(254,175,0,.8);
+}
+a:hover{
+    text-decoration: none;
+}
+.busca_titulo{
+    color: black;
+    font-weight: bold;
+}
+.titulo_avaluo{
+    color: white;
+}

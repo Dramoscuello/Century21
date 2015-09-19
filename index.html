@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="no-js" ng-app="appRoute">
+<html lang="en" ng-app="appRoute">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -78,15 +78,7 @@
 		</div>
 	</section>
 
-	<div class="cd-main-content">
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
-		</p>
-
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
-		</p>
+	<div ng-view>
 	</div>
 	
 <script src="js/jquery-1.11.3.min.js"></script>
@@ -94,5 +86,21 @@
 <script src="js/prefixfree.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/modernizr.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+    <!--<script>
+        var routes = angular.module('appRoute',['ngRoute'])
+        routes.config(['$routeProvider', function($routeProvider){
+            $routeProvider.when('/',{
+                templateUrl: 'views/inicio.html'
+            }).when('/hospedaje',{
+                templateUrl: 'views/hospedaje.html'
+            }).when('/instalacion',{
+                templateUrl: 'views/instalacion.html'
+            }).otherwise({
+                redirectTo:'/',
+            })
+        }])
+    </script>-->
 </body>
 </html>

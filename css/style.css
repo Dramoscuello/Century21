@@ -639,7 +639,7 @@ Slider navigation
 
 Main content
 
--------------------------------- */
+-------------------------------- 
 .cd-main-content {
   width: 90%;
   max-width: 768px;
@@ -660,12 +660,12 @@ Main content
     font-size: 1.6rem;
   }
 }
-
+*/
 /* -------------------------------- 
 
 Javascript disabled
 
--------------------------------- */
+-------------------------------- 
 .no-js .cd-hero-slider li {
   display: none;
 }
@@ -676,3 +676,4 @@ Javascript disabled
 .no-js .cd-slider-nav {
   display: none;
 }
+*/

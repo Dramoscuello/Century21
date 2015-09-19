@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="appRoute">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Franquicia internacional del sector inmobiliario dedicada a la venta, arriendos, avalúos, asesorías y trámites de todos tipo de bienes inmuebles">
+        <meta name="keywords" content="century 21, majo sky, bienes raices, inmobiliaria">
+        <meta name="author" content="Ads Marketing digital">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Century 21 - Majo Sky</title>
+    </head>
+    <body>
+        <header>
+        </header>
+        <div ng-view>
+        </div>
+        <footer>
+        </footer>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <!--<script>
+        var routes = angular.module('appRoute',['ngRoute'])
+        routes.config(['$routeProvider', function($routeProvider){
+            $routeProvider.when('/',{
+                templateUrl: 'views/inicio.html'
+            }).when('/hospedaje',{
+                templateUrl: 'views/hospedaje.html'
+            }).when('/instalacion',{
+                templateUrl: 'views/instalacion.html'
+            }).otherwise({
+                redirectTo:'/',
+            })
+        }])
+    </script>-->
+    </body>
+</html>

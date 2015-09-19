@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="appRoute">
+<html lang="es" ng-app="appRoute">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/reset.css"> 
-	<link rel="stylesheet" href="css/style.css"> 
+	<link rel="stylesheet" href="css/slideMain.css"> 
 	<link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/style.css">
   	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 	<title>Century 21 - MajoSky</title>
 </head>
@@ -23,84 +25,43 @@
 
 		<nav class="cd-primary-nav navegacion">
 			<ul>
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Busque su inmueble</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li><a href="#/">Inicio</a></li>
+				<li><a href="#/hospedaje">Busque su inmueble</a></li>
+				<li><a href="#/instalacion">Contacto</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<section class="cd-hero">
-		<ul class="cd-hero-slider autoplay">
-			<li class="selected">
-                <div class="cd-full-width"></div>
-			</li>
-
-			<li>
-				<div class="cd-full-width">
-				</div>
-			</li>
-
-			<li>
-				<div class="cd-full-width">
-					<h2 class="busca_titulo">¡Busca tu inmueble!</h2>
-					<a href="void: javascript(0)" class="cd-btn"><span class="icon-search"></span> Buscar</a>
-				</div>
-				
-			</li>
-            
-            <li>
-                <div class="cd-full-width"></div>
-            </li>
-			
-
-			<li>
-				<div class="cd-full-width">
-					<h2 class="titulo_avaluo">Avalúos</h2>
-					<p>Es el realizado por un perito avaluador que es contratado por una persona,	empresa o banco para determinar el valor real de una propiedad en un momento determinado...</p>
-					<a href="void: javascript(0)" class="cd-btn">Avaluar &rarr;</a>
-				</div>
-			</li>
-		</ul>
-
-		<div class="cd-slider-nav">
-			<nav>
-				<span class="cd-marker item-1"></span>
-				
-				<ul>
-					<li class="selected"><a href="void: javascript(0)"><span class="icon-library prueba_icono"></span></a></li>
-					<li><a href="void: javascript(0)"><span class="icon-library prueba_icono"></span></a></li>
-					<li><a href="void: javascript(0)"><span class="icon-search prueba_icono"></span></a></li>
-					<li><a href="void: javascript(0)"><span class="icon-library prueba_icono"></span></a></li>
-					<li><a href="void: javascript(0)"><span class="icon-user-tie prueba_icono"></span></a></li>
-				</ul>
-			</nav> 
-		</div>
-	</section>
-
-	<div ng-view>
-	</div>
-	
+	<div ng-view></div>
+    <footer></footer>
+	       
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.catslider.js"></script>
 <script src="js/prefixfree.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/modernizr.js"></script>
+<script>
+        $(function() {
+
+                $( '#mi-slider' ).catslider();
+		});
+</script>
 <script src="js/angular.min.js"></script>
 <script src="js/angular-route.min.js"></script>
-    <!--<script>
-        var routes = angular.module('appRoute',['ngRoute'])
-        routes.config(['$routeProvider', function($routeProvider){
-            $routeProvider.when('/',{
-                templateUrl: 'views/inicio.html'
-            }).when('/hospedaje',{
-                templateUrl: 'views/hospedaje.html'
-            }).when('/instalacion',{
-                templateUrl: 'views/instalacion.html'
-            }).otherwise({
-                redirectTo:'/',
-            })
-        }])
-    </script>-->
+<script>
+    var routes = angular.module('appRoute',['ngRoute'])
+    routes.config(['$routeProvider', function($routeProvider){
+        $routeProvider.when('/',{
+            templateUrl: 'views/inicio.html'
+        }).when('/hospedaje',{
+            templateUrl: 'views/hospedaje.html'
+        }).when('/instalacion',{
+            templateUrl: 'views/instalacion.html'
+        }).otherwise({
+            redirectTo:'/',
+        })
+    }])
+</script>    
 </body>
 </html>

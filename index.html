@@ -1,43 +1,123 @@
-<!DOCTYPE html>
-<html lang="es" ng-app="appRoute">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Franquicia internacional del sector inmobiliario dedicada a la venta, arriendos, avalúos, asesorías y trámites de todos tipo de bienes inmuebles">
-        <meta name="keywords" content="century 21, majo sky, bienes raices, inmobiliaria">
-        <meta name="author" content="Ads Marketing digital">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/estilos.css">
-        <link rel="stylesheet" href="style.css">
-        <title>Century 21 - Majo Sky</title>
-    </head>
-    <body>
-        <header>
-        </header>
-        <div ng-view>
-        </div>
-        <footer>
-        </footer>
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/angular.min.js"></script>
-    <script src="js/angular-route.min.js"></script>
-    <script src="js/prefixfree.min.js"></script>
-    <!--<script>
-        var routes = angular.module('appRoute',['ngRoute'])
-        routes.config(['$routeProvider', function($routeProvider){
-            $routeProvider.when('/',{
-                templateUrl: 'views/inicio.html'
-            }).when('/hospedaje',{
-                templateUrl: 'views/hospedaje.html'
-            }).when('/instalacion',{
-                templateUrl: 'views/instalacion.html'
-            }).otherwise({
-                redirectTo:'/',
-            })
-        }])
-    </script>-->
-    </body>
+<!doctype html>
+<html lang="en" class="no-js" ng-app="appRoute">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Franquicia internacional del sector inmobiliario dedicada a la venta, arriendos, avalúos, asesorías y trámites de todos tipo de bienes inmuebles">
+    <meta name="keywords" content="century 21, majo sky, bienes raices, inmobiliaria">
+    <meta name="author" content="Ads Marketing digital">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/reset.css"> 
+	<link rel="stylesheet" href="css/style.css"> 
+	<script src="js/modernizr.js"></script>
+  	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+	<title>Century 21 - MajoSky</title>
+</head>
+<body>
+    <h1 class="titulo_hide">Century 21 - MajoSky</h1>
+	<header class="cd-header">
+		<div id="cd-logo"><a href="void: javascript(0)"><img src="images/logo.png" alt="Logo"></a></div>
+
+		<nav class="cd-primary-nav">
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Busque su inmueble</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav> <!-- .cd-primary-nav -->
+	</header>
+
+	<section class="cd-hero">
+		<ul class="cd-hero-slider autoplay">
+			<li class="selected">
+				<div class="cd-full-width">
+					<h2>Hero slider</h2>
+					<p>A simple, responsive slideshow in CSS &amp; jQuery.</p>
+					<a href="http://codyhouse.co/?p=675" class="cd-btn">Article &amp; Download</a>
+				</div> <!-- .cd-full-width -->
+			</li>
+
+			<li>
+				<div class="cd-half-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+					<a href="void: javascript(0)" class="cd-btn">Start</a>
+					<a href="void: javascript(0)" class="cd-btn secondary">Learn More</a>
+				</div> <!-- .cd-half-width -->
+
+				<div class="cd-half-width cd-img-container">
+					<img src="assets/tech-1.jpg" alt="tech 1">
+				</div> <!-- .cd-half-width.cd-img-container -->
+			</li>
+
+			<li>
+				<div class="cd-half-width cd-img-container">
+					<img src="assets/tech-2.jpg" alt="tech 2">
+				</div> <!-- .cd-half-width.cd-img-container -->
+
+				<div class="cd-half-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+					<a href="void: javascript(0)" class="cd-btn">Start</a>
+					<a href="void: javascript(0)" class="cd-btn secondary">Learn More</a>
+				</div> <!-- .cd-half-width -->
+				
+			</li>
+
+			<li class="cd-bg-video">
+				<div class="cd-full-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+					<a href="void: javascript(0)" class="cd-btn">Learn more</a>
+				</div> <!-- .cd-full-width -->
+
+				<div class="cd-bg-video-wrapper" data-video="assets/video/video">
+					<!-- video element will be loaded using jQuery -->
+				</div> <!-- .cd-bg-video-wrapper -->
+			</li>
+
+			<li>
+				<div class="cd-full-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+					<a href="void: javascript(0)" class="cd-btn">Start</a>
+					<a href="void: javascript(0)" class="cd-btn secondary">Learn More</a>
+				</div>
+			</li>
+		</ul>
+
+		<div class="cd-slider-nav">
+			<nav>
+				<span class="cd-marker item-1"></span>
+				
+				<ul>
+					<li class="selected"><a href="void: javascript(0)">Intro</a></li>
+					<li><a href="void: javascript(0)">Tech 1</a></li>
+					<li><a href="void: javascript(0)">Tech 2</a></li>
+					<li><a href="void: javascript(0)">Video</a></li>
+					<li><a href="void: javascript(0)">Image</a></li>
+				</ul>
+			</nav> 
+		</div>
+	</section>
+
+	<div class="cd-main-content">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
+		</p>
+	</div>
+	
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/prefixfree.min.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>

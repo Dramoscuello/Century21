@@ -24,7 +24,9 @@ a {
   color: #d44457;
   text-decoration: none;
 }
-
+a:hover{
+    text-decoration: none;
+}
 img {
   max-width: 100%;
 }
@@ -54,14 +56,16 @@ Main Components
 
 #cd-logo {
   float: left;
-  margin: 13px 0 0 5%;
+  margin: 5px 0 0 5%;
 }
 #cd-logo img {
   display: block;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   #cd-logo {
-    margin: 23px 0 0 5%;
+    margin: 10px 0 0 5%;
+    height: 40px;
+    width: 70px;
   }
 }
 

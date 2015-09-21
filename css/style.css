@@ -294,15 +294,16 @@
 	}
 }
 
-@media screen and (max-width: 740px){
+/*@media screen and (max-width: 740px){
 	.mi-slider {
 		height: 300px;
 	}
 	.mi-slider nav {
 		top: 220px;
 	}
-}
+}*/
 
+/*
 @media screen and (max-width: 490px){ 
 	.mi-slider {
 		text-align: center;
@@ -329,4 +330,5 @@
 		display: none;
 	}
 }
+*/
 

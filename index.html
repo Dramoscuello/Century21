@@ -14,19 +14,21 @@
 	<link rel="stylesheet" href="css/slideMain.css"> 
 	<link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
   	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
 	<title>Century 21 - MajoSky</title>
 </head>
 <body>
-    <h1 class="titulo_hide">Century 21 - MajoSky</h1>
+    
 	<header class="cd-header">
 		<div id="cd-logo"><a href="void: javascript(0)"><img src="images/logo.png" alt="Logo"></a></div>
 
 		<nav class="cd-primary-nav navegacion">
 			<ul>
-				<li><a href="#/">Inicio</a></li>
-				<li><a href="#/hospedaje">Busque su inmueble</a></li>
-				<li><a href="#/instalacion">Contacto</a></li>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Busque su inmueble</a></li>
+				<li><a href="#">Contacto</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -77,7 +79,9 @@
 			</nav> 
 		</div>
 	</section>
+    <h1>Century 21 - MajoSky</h1>
 	<div class="main">
+        
 				<div id="mi-slider" class="mi-slider">
 					<ul>
 						<li><a href="#"><img src="images/Tramites.jpg" class="img-circle"><h4>Trámites</h4></a></li>
@@ -89,8 +93,8 @@
 						<li><a href="#"><img src="images/politicas.jpg" class="img-circle"><h4>Politicas de calidad</h4></a></li>
 					</ul>
 					<nav>
-						<a href="void: javascript(0)">Servicios</a>
-						<a href="void: javascript(0)">Quienes somos</a>
+						<a href="void: javascript(0)" class="titulos_main">Servicios</a>
+						<a href="void: javascript(0)" class="titulos_main">Quienes somos</a>
 					</nav>
 				</div>
 			</div>
@@ -100,11 +104,11 @@
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12"><h3 class="titulo_servicios">SERVICIOS</h3></div>
                 <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
                     <h4>Avalúos</h4>
-                    <a href="#"><img src="images/Avaluos.jpg" class="img-circle"></a>
+                    <a href="#"><img src="images/Avaluos.jpg" class="img-circle img-big-contexto"></a>
                 </div>
                 <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
                     <h4>Trámites</h4>
-                    <a href="#"><img src="images/Tramites.jpg" class="img-circle"></a>
+                    <a href="#"><img src="images/Tramites.jpg" class="img-circle img-big-contexto"></a>
                 </div>
             </div>
             <div class="row">
@@ -125,27 +129,28 @@
         </div>
     </div>
 	<!--<div ng-view></div>-->
-    <footer style="background-color: gray">
+    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">Occaecat a lorem nostrud. Te e despicationes aut quid ubi e nulla expetendis. 
-                    Elit senserit distinguantur, amet arbitror quibusdam non ipsum ne tempor ubi 
-                    duis hic de quae laboris philosophari, excepteur elit veniam pariatur quem, quid 
-                    appellat fabulas iis a ne quem litteris de irure te tempor. Quae do cernantur an 
-                    cillum est iis illum ad quorum o incididunt minim esse non quae, ne ab legam 
-                    eram cillum. </div>
-                <div class="col-md-4">Illum possumus in sunt magna, an cernantur despicationes qui excepteur minim 
-                    quamquam te quae cohaerescant iudicem anim incurreret, eu cernantur an probant, 
-                    sint eiusmod o exquisitaque a tempor labore fore id culpa ea cillum sed de minim 
-                    laboris. Magna graviterque cernantur labore incurreret, doctrina o tamen, ne id 
-                    instituendarum ne lorem incurreret e reprehenderit ne quem efflorescere arbitror 
-                    eram singulis si admodum fugiat quem nam veniam o eram de iis aliqua incididunt, 
-                    nescius ita amet. </div>
-                <div class="col-md-4">Id ne multos cupidatat. Consequat nulla est litteris instituendarum, cupidatat 
+                <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 logo_footer article_footer"><img src="images/logo.png"></div>
+                <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 article_footer"><h3>Century 21 - MajoSky</h3>
+                    <p>Franquicia internacional del sector inmobiliario dedicada a la venta, arriendos, avalúos, asesorías y trámites de todos tipo de bienes inmuebles</p>
+                    <a href="#" class="btn btn-contact animated infinite swing">Contáctanos</a>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 article_footer">Id ne multos cupidatat. Consequat nulla est litteris instituendarum, cupidatat 
                     ad noster expetendis et te eu enim pariatur aut aliquip nisi ex appellat 
                     philosophari, duis offendit aut illum nisi sed quae cernantur si philosophari 
                     ubi id noster varias ab arbitror qui multos laboris distinguantur. Ad quae amet 
                     an nostrud, est et tamen consequat.</div>
+            </div>
+            <hr>
+            <div class="row creditos">
+                <div class="col-md-11 col-lg-11 col-sm-11 col-xs-10">
+                    <h6>Powered by Ads marketing digital</h6>
+                </div>
+                <div class="col-md-1 col-lg-1 col-sm-1 col-xs-2">
+                    <span class="goTop icon-circle-up"></span>
+                </div>
             </div>
         </div>
     </footer>
@@ -156,28 +161,21 @@
 <script src="js/prefixfree.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/modernizr.js"></script>
-<script>
+<!--<script src="js/angular.min.js"></script>
+<script src="js/angular-route.min.js"></script>-->
+<!--<script src="js/funciones.js"></script>-->
+    <script>
         $(function() {
 
                 $( '#mi-slider' ).catslider();
 		});
-</script>
-<script src="js/angular.min.js"></script>
-<script src="js/angular-route.min.js"></script>
-<!--
-<script>
-    var routes = angular.module('appRoute',['ngRoute'])
-    routes.config(['$routeProvider', function($routeProvider){
-        $routeProvider.when('/',{
-            templateUrl: 'views/inicio.html'
-        }).when('/hospedaje',{
-            templateUrl: 'views/hospedaje.html'
-        }).when('/instalacion',{
-            templateUrl: 'views/instalacion.html'
-        }).otherwise({
-            redirectTo:'/',
-        })
-    }])
-</script>  -->  
+    </script>
+    <script>
+        $('.goTop').click(function(){
+        $('body, html').animate({
+            scrollTop: '0px'
+        });
+    });
+    </script> 
 </body>
 </html>

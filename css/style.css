@@ -93,7 +93,9 @@
 	letter-spacing: 5px;
 	padding: 40px 30px 30px 34px;
 	position: relative;
-	color: #888;
+	color: rgb(254,175,0);
+    font-family: 'Lilita One', cursive;
+    font-weight: bold;
 	outline: none;
 	-webkit-transition: color 0.2s linear;
 	transition: color 0.2s linear;
@@ -101,7 +103,7 @@
 
 .mi-slider nav a:hover,
 .mi-slider nav a.mi-selected {
-	color: #000;
+	color:black;
 }
 
 .mi-slider nav a.mi-selected:after,

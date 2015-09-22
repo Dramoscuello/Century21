@@ -1,5 +1,11 @@
-.titulo_hide{
-    display: none;
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3.5em;
+    font-family: 'Lilita One', cursive;
+    margin-top: 40px;
+    color: black;
 }
 .navegacion{
     font-family: "Open Sans", sans-serif;
@@ -23,6 +29,8 @@ a:hover{
 }
 .main {
 	padding-bottom: 80px;
+    background-image: url(../images/footer.jpg);
+    background-size: cover;
 }
 .main a{
     color: #555;
@@ -53,6 +61,50 @@ a:hover{
     margin-bottom: 10px;
 }
 
+footer{
+    font-family: "Open Sans", sans-serif;
+    padding: 20px 0px;
+    background: gray;
+    background-image: url(../images/textures.png);
+    background-repeat: repeat;
+    box-shadow: inset 0 0 15px 5px rgba(26, 24, 24, 0.3);
+    color: rgb(252, 246, 246);
+}
+.goTop{
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+.goTop:hover{
+    color: rgba(254,175,0,.8);
+}
+.creditos{
+    font-weight: bold;
+    color: black
+    
+}
+.creditos h6{
+    color: rgba(254,175,0,.8);
+}
+.logo_footer{
+    text-align: center;
+}
+footer h3{
+    text-transform: uppercase;
+    color: rgb(254,175,0);
+}
+.btn-contact{
+    background-color: rgba(254,175,0,.5);
+    color: white;
+}
+.btn-contact:hover{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(254,175,0,.9);
+}
+.img-big-contexto{
+    width: 70%;
+}
 @media screen and (max-width: 768px){
     .contexto{
         display: block;
@@ -64,5 +116,29 @@ a:hover{
     }
     .main{
         display: none;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    .titulo_servicios{
+        font-size: 1.2em;
+    }
+    .titulo_quienes{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 767px){
+    .article_footer{
+        text-align: center;
+        padding: 20px 0px;
+        border-bottom: 1px solid white;
+    }
+    .article_footer:last-child{
+        border-bottom: none;
+    }
+}
+@media screen and (max-width: 490px){
+    h1{
+        font-size: 1.7em;
     }
 }
